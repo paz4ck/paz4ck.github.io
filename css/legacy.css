@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Clarkson;
+    src: url('/htmlFP/fonts/ClarksonScript-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: atwriter;
+    src: url('/htmlFP/fonts/atwriter.ttf') format('truetype');
+}
+
+.two-column-layout {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.column {
+    text-align: center;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+p, h1 {
+    font-family: atwriter;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .two-column-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        margin-bottom: 20px;
+    }
+}
